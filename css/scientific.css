@@ -1,0 +1,120 @@
+body {
+  /*background: linear-gradient(to right, #85D8CE, #085078);*/
+}
+
+#app {
+  font-family: Trebuchet MS, Arial Rounded MT,  Lucida Sans, Kalinga;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 680px;
+  align-item: center;
+}
+
+.calculator {
+  width: 460px;
+  height: 650px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  font-size: 16px;
+  font-family: Consolas;
+  background: linear-gradient(to right, grey, #2f2c29);
+  box-shadow: 0px 0px 4px 4px #333;
+}
+
+.input {
+  /*width: 420px;*/
+  height: 50px;
+  border-radius: 0px;
+  border: 1px solid black;
+  background-color: #333333;
+  color: #d9d9d9;
+  padding: 0 5px 0 5px;
+  margin: 0 0px 10px 0px;
+  font-size: 30px;
+}
+
+#item-input {
+      width: 400px;
+      height: 200px;
+      margin-top: 50px;      
+      background: linear-gradient(to right, #4a864c, #2f2c29);
+      font-size: 30px;
+      color: #d9d9d9;
+      border: grey;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px 4px #444444;
+    }
+
+.input:focus,
+.input:active {
+  border-color: #03a9f4;
+  box-shadow: 0 0 4px #03A9F4;
+  outline: none 0;
+}
+
+.press {
+  margin: 3px;
+  width: 63px;  
+  height: 40px;
+  border-color: grey;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 0px 2px 2px 2px #444444;
+  cursor: pointer;
+  outline: none;
+}
+
+.silver {
+  background-color: silver;
+  color: black;
+}
+
+.dimgray {
+  background-color: dimgray;
+  color: white;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
+
+.mode {
+  display: flex;
+  height: 200px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.equal-sign {
+  background-color: green;
+  width: 50%;
+}
+
+.toggle-button {
+  border: none;
+  background-color: #333333;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+  color: #fff;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.35);
+}
+
+p {
+  margin-top: 0;
+}
+
+button::-moz-focus-inner {
+  border-color: transparent;
+}

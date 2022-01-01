@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171811138-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-171811138-1');
+</script>
+	
+	<meta name="description" content="Virtual die roller for quick combination and recreation, along with the Best User Interface, Calculator.net dice roller, roll a dice, backgammon dice roller">
+	<meta name="keyword" content="Virtual die roller for quick combination and recreation, along with the Best User Interface, Calculator.net dice roller, roll a dice, backgammon dice roller">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Icon-->
+    <link rel="shortcut icon" type="image/svg" href="graph-up.svg">
+
+	<title>Dice Roller</title>
+    <!--Load stylesheets-->
+	<link rel="stylesheet" type="text/css" href="css/tea.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap1.css">
+	<link rel="stylesheet" type="text/css" href="css/templatemo-style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	
+
+	<!--Load scripts-->
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/dice-roller.js"></script>
+	<script type="text/javascript">
+		function load(){
+			var min=1;var max=6;var max=+max+1;var r=Math.random();var d=max-min;var c=r*d;var p=c+min;var ans1=Math.floor(p);var min=1;var max=6;if((min>=0)&&(max>=0))var max=+max+1;var r=Math.random();var d=max-min;var c=r*d;var p=c+min;var ans2=Math.floor(p);$('.btn1').fadeIn(5000);$('.btn2').fadeIn(5000);$('.btn1').append("<img src='img/"+ans1+".png' height='100px' width'100px' class='animate-box fadeInLeft animated-fast' data-animate-effect='fadeInLeft'>");$('.btn2').append("<img src='img/"+ans2+".png' height='100px' width'100px' class='animate-box fadeInRight animated-fast' data-animate-effect='fadeInRight'>");
+		}
+	</script>
+	<style type="text/css">
+		/*
+		.rotate1 {
+			transform: rotate(45deg);
+		}
+		.rotate2 {
+			transform: rotate(90deg);
+		}
+		.rotate3 {
+			transform: rotate(135deg);
+		}
+		.rotate4 {
+			transform: rotate(180deg);
+		}
+		.rotate5 {
+			transform: rotate(225deg);
+		}
+		.rotate6 {
+			transform: rotate(270deg);
+		}
+		.rotate7 {
+			transform: rotate(315deg);
+		}
+		*/
+		.rotate {
+			animation: rotation .4s infinite linear;
+		}
+		@keyframes rotation {
+			from {
+				transform: rotate(0deg);
+			}
+			to {
+				transform: rotate(359deg);
+			}
+		}
+	</style>
+</head>
+<body onload="load();">
+	<div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+        <a href="/"><img src="fonts/house.svg" id="icon">Feel at Home</a>
+
+          <a href="#"><img src="fonts/heart.svg" id="icon">Give this project a star</a>
+               
+          <a href="#"><img src="fonts/graph-up.svg" id="icon">Make a Contribution</a>
+        
+          <a href="#"><img src="fonts/pencil.svg" id="icon">Give a feedback on
+          	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ul>
+          		<em style="text-decoration: underline;" onclick="window.location='https://facebook.com/covenant.tope'">Facebook</em>,
+          		<em style="text-decoration: underline;" onclick="window.location='https://linkedin.com/in/covenant-junior-2b5427135'">Linkedin</em>,
+          		<em style="text-decoration: underline;" onclick="window.location='mailto:covenanttope@gmail.com'">Gmail</em></ul>
+          	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em style="text-decoration: underline;" onclick="window.location='whatsapp://send/?phone=2348154140492'">WhatsApp</em></ul>
+       	</a>
+          <a href="https://github.com/CovenantJunior"><img src="fonts/three-dots.svg" id="icon">See other projects</a>
+
+          <a href="https://google.com/search?q=covenant+tope+junior"><img src="fonts/search.svg" id="icon">Google Me 😏</a>      
+    </div>
+
+    <div id="main">
+    
+        <img onclick="openNav1()" id="main-content" src="fonts/list.svg" >
+    
+        <a href="/" class="heading" >Tea</a>
+        
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+		<main>
+			<div class="layout">
+				<!-- Start of Sign Up -->
+				<div class="main order-md-2">
+					<div class="start">
+						<div class="container">
+							<div class="col-md-12">
+								<div class="content">
+									<h1 style="text-align: center; color: inherit;">Tap to roll.</h1>
+									<div class="signup">
+										<div class="f-group" style="text-align: center;">
+												<p class="btn1" id="roll1" alt="calculate all die" style="width: auto; text-align: center; display: inline-flex;"></p>
+												&nbsp;&nbsp;&nbsp;
+												<p class="btn2" id="roll2" alt="calculate all die" style="width: auto; text-align: center; display: inline-flex;"></p>
+											<br>
+											<br>
+										</div>
+									</div>
+									<br>
+									<br>
+
+
+		                        </div>
+
+							</div>
+						
+					</div>
+				</div>
+			</div>
+		</main>
+</body>
+	<script type="text/javascript" src="js/basic.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>                 <!-- Bootstrap (http://v4-alpha.getbootstrap.com/) -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>                 <!-- Bootstrap (http://v4-alpha.getbootstrap.com/) -->
+	<script type="text/javascript" src="js/search.js"></script>
+</html>
